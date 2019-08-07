@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>手写Vue</title>
+  </head>
+  <body>
+    <div id="app">
+      <p @click="onClick">{{foo}}</p>
+      <p>{{bar}}</p>
+      <input type="text" k-model="bar">
+      <p k-text="foo"></p>
+    </div>
+    <script src="./compile.js"></script>
+    <script src="./kvue.js"></script>
+    <script>
+      const kvue = new KVue({
+        el: '#app',
+        // 先假设data上都是属性
+        data: {
+          foo: 'test1',
+          bar: 'test2',
+          test: {
+            mua: '123'
+          }
+        },
+        created() {
+          setTimeout(() => {
+            this.foo = '测试1';
+            this.bar = '测试2';
+          }, 1500);
+        },
+        methods: {
+          onClick() {
+            console.warn('click me');
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
