@@ -1,3 +1,8 @@
+---
+typora-copy-images-to: ./public
+typora-root-url: ./public
+---
+
 # 手写Vue
 
 ### Vue的核心概念
@@ -9,7 +14,7 @@
 
 
 
-![image-20190807083012291](/Users/leien/Library/Application Support/typora-user-images/image-20190807083012291.png)
+![image-20190807083012291](/image-20190807083012291.png)
 
 ### 核心类
 
@@ -20,11 +25,11 @@
 
 
 
-![image-20190807122717182](/Users/leien/Library/Application Support/typora-user-images/image-20190807122717182.png)
+![image-20190807122717182](/image-20190807122717182.png)
 
 
 
-![image-20190807123047959](/Users/leien/Library/Application Support/typora-user-images/image-20190807123047959.png)
+![image-20190807123047959](/image-20190807123047959.png)
 
 
 
